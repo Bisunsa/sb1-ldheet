@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul d'indemnité de licenciement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcul d'indemnité de licenciement</h1>
+        <form id="indemniteForm">
+            <label for="salaire">Salaire mensuel de base :</label>
+            <input type="number" id="salaire" required>
+
+            <label for="dateEmbauche">Date d'embauche :</label>
+            <input type="date" id="dateEmbauche" required>
+
+            <label for="dateRupture">Date de rupture du contrat :</label>
+            <input type="date" id="dateRupture" required>
+
+            <label for="categorie">Catégorie :</label>
+            <select id="categorie" required>
+                <option value="cadre">Cadre</option>
+                <option value="technicien">Technicien des métiers de la banque</option>
+            </select>
+
+            <label for="tempsPartiel">Pourcentage de temps partiel (si applicable) :</label>
+            <input type="number" id="tempsPartiel" min="0" max="100" placeholder="Laissez vide si temps plein">
+
+            <button type="submit">Calculer l'indemnité</button>
+        </form>
+        <div id="resultat"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

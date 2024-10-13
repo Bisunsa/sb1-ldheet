@@ -1,0 +1,9 @@
+{
+  "name": "indemnite-licenciement-calculator",
+  "version": "1.0.0",
+  "description": "Calculateur d'indemnité de licenciement",
+  "main": "index.html",
+  "scripts": {
+    "build": "mkdir -p dist && cp index.html style.css script.js dist/"
+  }
+}
